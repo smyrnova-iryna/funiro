@@ -3,11 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* --gray1: #3A3A3A; */
+  overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold'), url(../../public/fonts/gilroy/Gilroy-Bold.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: local('Gilroy-Medium'), url(../../public/fonts/gilroy/Gilroy-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: local('Gilroy-Light'), url(../../public/fonts/gilroy/Gilroy-Light.ttf) format('truetype');
+}
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -17,6 +31,7 @@
 } */
 
 body {
+  font-family: 'Gilroy-Light', sans-serif;
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

@@ -1,0 +1,61 @@
+.embla__buttons {
+    position: absolute;
+    top: -90px;
+    right: 80px;
+    color: #E89F71;
+}
+
+.embla__button {
+    width: 48px;
+    height: 48px;
+}
+
+
+.embla__button--next {
+    background-color: #E89F71;
+    color: white;
+}
+
+.embla__button--prev {
+    background-color:  #e89f7144;
+    color: #E89F71;
+}
+
+.embla__container {
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+
+
+
+@media (min-width: 1260px) {
+    .embla__container {
+        margin-left: calc(var(--slide-spacing) * 10);
+      }
+    
+}
+
+.embla__dots {
+    /* background-color: red; */
+    position: absolute;
+    top: -90px;
+    right: 50vw;
+    /* right: ; */
+}
+
+.embla__dot {
+    background-color: #D8D8D8;
+    width: 11px;
+    height: 11px;
+    margin-left: 20px;
+}
+
+.embla__dot--selected:after {
+    background-color: #E89F71;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #E89F71;
+    background: radial-gradient(circle, #E89F71  40%, rgba(218,0,52,0) 40%);
+    padding: 10px;
+  }
+
+/* #E89F71 */
