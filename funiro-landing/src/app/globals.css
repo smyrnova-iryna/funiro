@@ -33,3 +33,7 @@ body {
 h4, .font-600 {
   font-family: 'Gilroy-Medium', sans-serif;
 }
+
+.font-700 {
+  font-family: 'Gilroy-Bold', sans-serif;
+}
