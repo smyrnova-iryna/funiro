@@ -10,17 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         'gray1': '#3A3A3A',
+        'gray2': '#616161',
         'white': '#FFFFFF',
         'primary1': '#F9F1E7',
-        'primary2': '#FCF8F3'
+        'primary2': '#FCF8F3',
+        'opacityBlock': 'rgba(255, 255, 255, 0.82)',
       },
-      // backgroundImage: {
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      //   "gradient-conic":
-      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      // },
-      
-
+      fontSize: {
+        'heading': "28px"
+      }
     },
   },
   plugins: [],

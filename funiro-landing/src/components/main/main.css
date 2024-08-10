@@ -1,8 +1,8 @@
 .embla__buttons {
     position: absolute;
-    top: -90px;
-    right: 80px;
-    color: #E89F71;
+    top: 20px;
+    right: 5%;
+    color: var(--primary1);
 }
 
 .embla__button {
@@ -12,13 +12,13 @@
 
 
 .embla__button--next {
-    background-color: #E89F71;
+    background-color: var(--primary1);
     color: white;
 }
 
 .embla__button--prev {
     background-color:  #e89f7144;
-    color: #E89F71;
+    color: var(--primary1);
 }
 
 .embla__container {
@@ -35,27 +35,49 @@
 }
 
 .embla__dots {
-    /* background-color: red; */
     position: absolute;
-    top: -90px;
-    right: 50vw;
-    /* right: ; */
+    /* top: -90px;
+    right: 90px; */
+    bottom: 90px;
+    right: 42%;
 }
 
 .embla__dot {
-    background-color: #D8D8D8;
+    background-color: var(--primary2);
     width: 11px;
     height: 11px;
     margin-left: 20px;
 }
 
+
 .embla__dot--selected:after {
-    background-color: #E89F71;
+    background-color: var(--primary1);
     width: 11px;
     height: 11px;
-    border: 1px solid #E89F71;
-    background: radial-gradient(circle, #E89F71  40%, rgba(218,0,52,0) 40%);
+    border: 1px solid var(--primary1);
+    background: radial-gradient(circle, var(--primary1)  40%, rgba(218,0,52,0) 40%);
     padding: 10px;
   }
 
-/* #E89F71 */
+.embla__viewport {
+    /* height: calc(100vh-262px); */
+    /* height: (100vh*0.2); */
+    /* background-color: red; */
+}
+
+.embla__slide {
+    height: calc(100vh - 262px);
+    /* height: 300px!important; */
+}
+
+@media (min-width: 520px) {
+    .embla__dots {
+        top: calc(-100vh + 212px);
+        /* bottom: 0; */
+        right: 50vw;
+    }
+    .embla__buttons {
+        top: -90px;
+        right: 80px;
+    }
+}

@@ -14,17 +14,17 @@ import {
 } from './ArrowButtons'
 import { DotButton, useDotButton } from './DotButtons'
 import Image from 'next/image';
-import Slide from "../../../../public/images/slide2.png";
 
 const TWEEN_FACTOR_BASE = 0.2
 
 type PropType = {
   slides: number[]
   options?: EmblaOptionsType
+  slidesData: string[]
 }
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props
+  const { slides, options, slidesData } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const tweenFactor = useRef(0)
   const tweenNodes = useRef<HTMLElement[]>([])
@@ -108,15 +108,14 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
+          {slidesData.map((slide, idx) => (
+            <div className="embla__slide" key={idx}>
               <div className="embla__parallax">
                 <div className="embla__parallax__layer">
-                    <Image
+
+                <Image
                     priority
-                    src={Slide}
-                    // height={29}
-                    // width={74}
+                    src={require(`../../../../public/images/${slide}`)}
                     alt="Carousel item"
                 /> 
                 </div>

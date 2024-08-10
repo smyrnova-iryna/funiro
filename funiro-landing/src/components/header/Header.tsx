@@ -7,11 +7,10 @@ import Heart from "../../../public/icons/Heart.svg";
 import Cart from "../../../public/icons/Cart.svg";
 import Avatar from "../../../public/images/avatar.png"
 
-// bg-transparent
 
 export default function Header() {
   return (
-    <header className="absolute top-0 left-0 bg-white w-screen h-[500px] flex flex-col-reverse items-center justify-between font-medium text-gray1
+    <header className="absolute top-0 left-0 bg-transparent w-screen h-[500px] flex flex-col-reverse items-center justify-between font-medium text-gray1
      py-10 px-7 gap-8 md:h-[200px] lg:h-[100px] lg:flex-row lg:gap-auto xl:px-[100px]">
         <nav className='flex flex-col gap-10 w-full md:flex-row lg:w-max'>
             <Image
